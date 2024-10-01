@@ -1,0 +1,35 @@
+$primary-color: #007bff;
+
+.gallery-app {
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    font-size: 2rem;
+    color: $primary-color;
+  }
+
+  input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    .gallery-item {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
